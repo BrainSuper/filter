@@ -1,0 +1,7 @@
+.content {
+  width: 1024px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
