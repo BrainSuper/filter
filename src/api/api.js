@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: `https://randomuser.me/api/?results=100`,
+  baseURL: `https://randomuser.me/api/?results=1000`,
 })
 
 export const getUser = () => {

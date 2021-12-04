@@ -1,10 +1,15 @@
 
 import { connect } from "react-redux";
-import { setUsersThunkCreator } from "../redux/users-reducer";
+import { addFilters, setUsersThunkCreator } from "../redux/users-reducer";
 import Filter from "./Filter";
 
 
+const mapStateToProps = (state) => {
+    return {
+      filters: state.usersPage.filters
+    }
+}
 
 
-const FilterContainer = connect(null, {setUsersThunkCreator})(Filter);
+const FilterContainer = connect(mapStateToProps, {setUsersThunkCreator, addFilters})(Filter);
 export default FilterContainer;

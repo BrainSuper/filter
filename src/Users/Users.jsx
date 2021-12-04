@@ -8,6 +8,7 @@ const Users = (props) => {
       <div>{user.gender}</div>
       <div>{user.email}</div>
       <div>{user.dob.date}</div>
+      <div>{user.nat}</div>
     </div>) : console.log('hello')}
 
   </div>
